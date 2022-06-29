@@ -435,36 +435,36 @@ Inference result is saved in current path, you can find result like this in acc.
 
 ### Training Performance
 
-| Parameters                 | Face Attribute                                              |  Face Attribute                                             |
-| -------------------------- | ----------------------------------------------------------- | ----------------------------------------------------------- |
-| Model Version              | V1                                                          | V1                                                          |
-| Resource                   | Ascend 910; CPU 2.60GHz, 192cores; Memory 755G; OS Euler2.8 | Tesla V100-PICE-32G                                         |
-| uploaded Date              | 09/30/2020 (month/day/year)                                 | 07/19/2021 (month/day/year)                                 |
-| MindSpore Version          | 1.0.0                                                       | 1.3.0                                                       |
-| Dataset                    | 91K images                                                  | 91K images                                                  |
-| Training Parameters        | epoch=70, batch_size=128, momentum=0.9, lr=0.001            | epoch=70, batch_size=128, momentum=0.9, lr=0.001            |
-| Optimizer                  | Momentum                                                    | Momentum                                                    |
-| Loss Function              | Softmax Cross Entropy                                       | Softmax Cross Entropy                                       |
-| outputs                    | probability                                                 | probability                                                 |
-| Speed                      | 1pc: 200~250 ms/step; 8pcs: 100~150 ms/step                 | 1pc: 115~125 ms/step; 8pcs: 150~200 ms/step                 |
-| Total time                 | 1pc: 2.5 hours; 8pcs: 0.3 hours                             | 1pc: 1.5 hours; 8pcs: 0.4 hours                             |
-| Checkpoint for Fine tuning | 88M (.ckpt file)                                            | 88M (.ckpt file)                                            |
+| Parameters                 | Face Attribute                                              |  
+| -------------------------- | ----------------------------------------------------------- | 
+| Model Version              | V1                                                          | 
+| Resource                   | Ascend 910; CPU 2.60GHz, 192cores; Memory 755G; OS Euler2.8 | 
+| uploaded Date              | 09/30/2020 (month/day/year)                                 | 
+| MindSpore Version          | 1.0.0                                                       | 
+| Dataset                    | 91K images                                                  | 
+| Training Parameters        | epoch=70, batch_size=128, momentum=0.9, lr=0.001            | 
+| Optimizer                  | Momentum                                                    | 
+| Loss Function              | Softmax Cross Entropy                                       | 
+| outputs                    | probability                                                 | 
+| Speed                      | 1pc: 200~250 ms/step; 8pcs: 100~150 ms/step                 | 
+| Total time                 | 1pc: 2.5 hours; 8pcs: 0.3 hours                             | 
+| Checkpoint for Fine tuning | 88M (.ckpt file)                                            | 
 
 ### Evaluation Performance
 
-| Parameters          | Face Attribute              | Face Attribute              |
-| ------------------- | --------------------------- | --------------------------- |
-| Model Version       | V1                          | V1                          |
-| Resource            | Ascend 910; OS Euler2.8     | Tesla V100-PICE-32G         |
-| Uploaded Date       | 09/30/2020 (month/day/year) | 07/19/2021 (month/day/year) |
-| MindSpore Version   | 1.0.0                       | 1.3.0                       |
-| Dataset             | 11K images                  | 11K images                  |
-| batch_size          | 1                           | 1                           |
-| outputs             | accuracy                    | accuracy                    |
-| Accuracy(8pcs)      | age:45.7%                   | age:49.0%                   |
-|                     | gender:89.5%                | gender:90.8%                |
-|                     | mask:99.2%                  | mask:99.3%                  |
-| Model for inference | 88M (.ckpt file)            | 88M (.ckpt file)            |
+| Parameters          | Face Attribute              | 
+| ------------------- | --------------------------- |
+| Model Version       | V1                          | 
+| Resource            | Ascend 910; OS Euler2.8     | 
+| Uploaded Date       | 09/30/2020 (month/day/year) | 
+| MindSpore Version   | 1.0.0                       | 
+| Dataset             | 11K images                  | 
+| batch_size          | 1                           | 
+| outputs             | accuracy                    | 
+| Accuracy(8pcs)      | age:45.7%                   | 
+|                     | gender:89.5%                | 
+|                     | mask:99.2%                  | 
+| Model for inference | 88M (.ckpt file)            | 
 
 # [ModelZoo Homepage](#contents)
 
